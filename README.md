@@ -1,12 +1,10 @@
 #  왓챠피디아 🚀
 
-## Architecture ✨
-
-<div align=center>
-  
-<img width="850" src="https://github.com/DO-SOPT-Seminar-Web-6/WatchaPedia-Server/assets/81796317/682d55a5-4d5d-483b-8591-fe4b8f5af62f">
-
-</div>
+## Contributors ✨
+| [@SunwoongH](https://github.com/SunwoongH) | [@hysong4u](https://github.com/hysong4u) |
+| :---: | :---: |
+||
+||
 
 <br>
 
@@ -25,11 +23,23 @@
 
 <br>
 
-## Contributors ✨
-| [@SunwoongH](https://github.com/SunwoongH) | [@hysong4u](https://github.com/hysong4u) |
-| :---: | :---: |
-||
-||
+## Architecture ✨
+
+<div align=center>
+  
+<img width="850" src="https://github.com/DO-SOPT-Seminar-Web-6/WatchaPedia-Server/assets/81796317/682d55a5-4d5d-483b-8591-fe4b8f5af62f">
+
+</div>
+
+<br>
+
+## ERD ✨
+
+<div align=center>
+  
+<img width="850" src="https://github.com/DO-SOPT-Seminar-Web-6/WatchaPedia-Server/assets/81796317/aacfed8b-cc7e-47eb-9512-fc1a692ef0a9">
+
+</div>
 
 <br>
 
