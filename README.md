@@ -27,7 +27,7 @@
 
 <div align=center>
   
-<img width="850" src="https://github.com/DO-SOPT-Seminar-Web-6/WatchaPedia-Server/assets/81796317/682d55a5-4d5d-483b-8591-fe4b8f5af62f">
+<img width="850" src="https://github.com/DO-SOPT-Seminar-Web-6/WatchaPedia-Server/assets/81796317/bdf8561f-1ce0-4f57-bde6-896fe95bdb34">
 
 </div>
 
