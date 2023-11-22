@@ -21,7 +21,8 @@ jobs:
 
       - name: ✔️ create application.yml
         run: |
-          cd ./src/main/resources
+          cd ./src/main
+          mkdir resources && cd $_
           echo "$APPLICATION" > ./application.yml
         env:
           APPLICATION: ${{ secrets.APPLICATION }}
