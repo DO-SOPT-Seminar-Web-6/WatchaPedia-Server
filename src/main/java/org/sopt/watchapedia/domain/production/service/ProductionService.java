@@ -1,6 +1,7 @@
 package org.sopt.watchapedia.domain.production.service;
 
 import lombok.RequiredArgsConstructor;
+import org.sopt.watchapedia.domain.production.dto.response.ProductionDetailResponse;
 import org.sopt.watchapedia.domain.production.dto.response.ProductionGetResponse;
 import org.sopt.watchapedia.domain.production.dto.response.ProductionGetResponse;
 import org.sopt.watchapedia.domain.production.repository.ProductionRepository;
@@ -16,9 +17,14 @@ public class ProductionService {
 
 
     public List<ProductionGetResponse> getProductions() {
-
         return productionRepository.findAll().stream()
                 .map(ProductionGetResponse::of)
                 .toList();
+    }
+
+public ProductionDetailResponse getProductionDetail(final Long productionId) {
+    return productionRepository.findById(productionId)
+            .map(ProductionDetailResponse::of)
+            .orElseThrow();
     }
 }
