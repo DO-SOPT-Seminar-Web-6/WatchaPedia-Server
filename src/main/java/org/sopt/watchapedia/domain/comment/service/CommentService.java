@@ -35,4 +35,3 @@ public class CommentService {
         return commentRepository.findAll(Sort.by(Sort.Direction.DESC, COMMENT.getColumn()));
     }
 }
-현
