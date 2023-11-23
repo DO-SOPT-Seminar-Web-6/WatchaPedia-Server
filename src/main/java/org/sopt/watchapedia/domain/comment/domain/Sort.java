@@ -1,9 +1,10 @@
 package org.sopt.watchapedia.domain.comment.domain;
 
+import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
-@RequiredArgsConstructor
+@RequiredArgsConstructor(access = AccessLevel.PRIVATE)
 @Getter
 public enum Sort {
     DEFAULT("default", null),
