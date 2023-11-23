@@ -20,8 +20,8 @@ public class CommentApiController {
     private final CommentService commentService;
 
     @GetMapping
-    public ResponseEntity<ApiResponse<?>> getComments(@RequestParam String sort) {
-        List<CommentGetResponse> comments = commentService.getComments(sort);
+    public ResponseEntity<ApiResponse<?>> getComments(@RequestParam final String sort) {
+        final List<CommentGetResponse> comments = commentService.getComments(sort);
         return ApiResponse.success(SuccessStatus.OK, comments);
     }
 }
