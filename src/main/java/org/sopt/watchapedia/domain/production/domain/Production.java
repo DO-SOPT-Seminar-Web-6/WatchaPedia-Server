@@ -3,8 +3,7 @@ package org.sopt.watchapedia.domain.production.domain;
 import jakarta.persistence.*;
 import lombok.*;
 
-@NoArgsConstructor
-@AllArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
 @Entity
 public class Production {
@@ -28,6 +27,4 @@ public class Production {
 
     @Column(columnDefinition = "TEXT", nullable = true)
     private String biography;
-
-
 }

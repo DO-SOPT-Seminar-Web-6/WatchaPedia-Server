@@ -4,7 +4,6 @@ import lombok.AccessLevel;
 import lombok.Builder;
 import org.sopt.watchapedia.domain.production.domain.Production;
 
-
 @Builder(access = AccessLevel.PRIVATE)
 public record ProductionGetResponse(
         Long id,
@@ -13,13 +12,13 @@ public record ProductionGetResponse(
         String role,
         String roleDetail
 ) {
-        public static ProductionGetResponse of(Production production) {
-                return ProductionGetResponse.builder()
-                        .id(production.getId())
-                        .imageUrl(production.getImageUrl())
-                        .name(production.getName())
-                        .role(production.getRole())
-                        .roleDetail(production.getRoleDetail())
-                        .build();
-        }
+    public static ProductionGetResponse of(Production production) {
+        return ProductionGetResponse.builder()
+                .id(production.getId())
+                .imageUrl(production.getImageUrl())
+                .name(production.getName())
+                .role(production.getRole())
+                .roleDetail(production.getRoleDetail())
+                .build();
+    }
 }
