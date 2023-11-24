@@ -3,7 +3,6 @@ package org.sopt.watchapedia.domain.production.service;
 import lombok.RequiredArgsConstructor;
 import org.sopt.watchapedia.domain.production.dto.response.ProductionDetailResponse;
 import org.sopt.watchapedia.domain.production.dto.response.ProductionGetResponse;
-import org.sopt.watchapedia.domain.production.dto.response.ProductionGetResponse;
 import org.sopt.watchapedia.domain.production.repository.ProductionRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

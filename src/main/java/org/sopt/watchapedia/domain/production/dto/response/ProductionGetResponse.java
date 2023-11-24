@@ -2,7 +2,6 @@ package org.sopt.watchapedia.domain.production.dto.response;
 
 import lombok.AccessLevel;
 import lombok.Builder;
-import lombok.Getter;
 import org.sopt.watchapedia.domain.production.domain.Production;
 
 
