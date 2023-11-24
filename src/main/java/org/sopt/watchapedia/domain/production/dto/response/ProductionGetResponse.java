@@ -1,19 +1,19 @@
 package org.sopt.watchapedia.domain.production.dto.response;
 
-import lombok.*;
+import lombok.AccessLevel;
+import lombok.Builder;
+import lombok.Getter;
 import org.sopt.watchapedia.domain.production.domain.Production;
 
 
-@Getter
-@Builder
-public class ProductionGetResponse {
-        private Long id;
-        private String imageUrl;
-        private String name;
-        private String role;
-        private String roleDetail;
-
-
+@Builder(access = AccessLevel.PRIVATE)
+public record ProductionGetResponse(
+        Long id,
+        String imageUrl,
+        String name,
+        String role,
+        String roleDetail
+) {
         public static ProductionGetResponse of(Production production) {
                 return ProductionGetResponse.builder()
                         .id(production.getId())
@@ -24,4 +24,3 @@ public class ProductionGetResponse {
                         .build();
         }
 }
-
