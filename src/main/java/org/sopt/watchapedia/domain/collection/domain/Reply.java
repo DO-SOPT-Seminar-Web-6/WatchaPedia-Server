@@ -30,7 +30,7 @@ public class Reply {
         return reply;
     }
 
-    public void changeCollection(Collection collection) {
+    private void changeCollection(Collection collection) {
         if (this.collection != null) {
             this.collection.removeReply(this);
         }
