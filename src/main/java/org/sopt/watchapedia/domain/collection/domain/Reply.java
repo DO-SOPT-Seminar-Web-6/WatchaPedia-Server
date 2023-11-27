@@ -2,6 +2,7 @@ package org.sopt.watchapedia.domain.collection.domain;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.sopt.watchapedia.domain.user.domain.User;
 
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
@@ -20,13 +21,17 @@ public class Reply {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "collection_id")
     private Collection collection;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id")
+    private User user;
 
-    public static Reply createReply(String content, int likeCount, Collection collection) {
+    public static Reply createReply(String content, int likeCount, Collection collection, User user) {
         Reply reply = Reply.builder()
                 .content(content)
                 .likeCount(likeCount)
                 .build();
         reply.changeCollection(collection);
+        reply.changeUser(user);
         return reply;
     }
 
@@ -36,5 +41,13 @@ public class Reply {
         }
         collection.addReply(this);
         this.collection = collection;
+    }
+
+    private void changeUser(User user) {
+        if (this.user != null) {
+            this.user.removeReply(this);
+        }
+        user.addReply(this);
+        this.user = user;
     }
 }
